@@ -635,7 +635,7 @@ prepare_ruby() {
     handle_failure "rubygems"
 
     echo "  * Installing Bundler"
-    $usr_path/bin/gem install bundler --no-ri  --no-rdoc  2>> "$logs_path/bundler" 1>> "$logs_path/bundler"
+    $usr_path/bin/gem install bundler 2>> "$logs_path/bundler" 1>> "$logs_path/bundler"
     handle_failure "bundler"
 }
 
